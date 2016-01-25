@@ -13,9 +13,8 @@ import LFEutils as me
 def Main():
     username = input('Please input your username: ')
     passwd = input('Please input your passwd: ')
-    me.init_connection()
     if not me.test_account(username, passwd):
-        print('Wrong account info, maybe try again.')
+        print('Wrong account info, you may try again.')
         return
     else:
         print()
