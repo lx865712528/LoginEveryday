@@ -61,7 +61,7 @@ def test_account(username, passwd):
 
 def am_I_online():
     fnull = open(os.devnull, 'w')
-    result = subprocess.call('ping fanyi.youdao.com', shell=True, stdout=fnull, stderr=fnull)
+    result = subprocess.call('ping -w 2 fanyi.youdao.com', shell=True, stdout=fnull, stderr=fnull)
     fnull.close()
     if result:
         return False

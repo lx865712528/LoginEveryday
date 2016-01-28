@@ -2,5 +2,8 @@
 
 /__pycache__/
 
-*.exe
+/resources/
 
+*.exe
+*.pyc
+*.py~
